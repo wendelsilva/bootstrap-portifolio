@@ -65,3 +65,37 @@ body {
     background-color: transparent;
     border: 4px solid var(--cor-principal);
 }
+
+section .container-fluid {
+    background-color: var(--cor-secundaria);
+}
+
+section .container-fluid .container-md {
+    margin: 8% auto;
+}
+
+.card {
+    background-color: var(--cor-preto);
+}
+
+.card-footer {
+    background-color: var(--cor-principal);
+}
+
+.social {
+    color: var(--cor-secundaria);
+    transition: all 0.3s;
+}
+
+.social:hover {
+    color: var(--cor-principal);
+}
+
+.fa-github {
+    color: white;
+    transition: all 0.3s;
+}
+
+.fa-github:hover {
+    color: var(--cor-secundaria);
+}
