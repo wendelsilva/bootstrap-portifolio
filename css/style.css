@@ -84,11 +84,6 @@ section .container-fluid .container-md {
 
 .social {
     color: var(--cor-secundaria);
-    transition: all 0.3s;
-}
-
-.social:hover {
-    color: var(--cor-principal);
 }
 
 .fa-github {
@@ -98,4 +93,12 @@ section .container-fluid .container-md {
 
 .fa-github:hover {
     color: var(--cor-secundaria);
+}
+
+.carousel {
+    background-image: linear-gradient(var(--cor-preto) 5%, var(--cor-secundaria ));
+}
+
+section .container-md {
+    margin-top: 5%;
 }
