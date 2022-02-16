@@ -1,0 +1,54 @@
+$primary0: #E91E3C;
+$primary1: #CF0624;
+$primary-1: #FF3B58;
+
+$secondary0: #222222;
+$secondary1: #080707;
+
+$black0: #18181A;
+$black1: #000000;
+$black-1: #333333;
+
+$white0: #FFFFFF;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// font-size: 16px (Desktop)
+// REM = 1rem = font-size
+html {
+    @media(max-width: 1080px) {
+        font-size: 93.75%; // 16px
+    }
+    @media(max-width: 720px) {
+        font-size: 87.5%; // 14px
+    }
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+body, input, button, textarea {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
