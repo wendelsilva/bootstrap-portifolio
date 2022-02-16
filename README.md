@@ -1,2 +1,2 @@
-# bootstrap-portifolio
- portifolio criado com bootstrap 5
+# Portfolio
+ portifolio criado com html, css e js
