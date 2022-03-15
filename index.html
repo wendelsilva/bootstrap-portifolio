@@ -1,63 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;700&family=Montserrat+Alternates:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <title>Wendel Silva</title>
 </head>
+
 <body>
-    <section id="header">
-        <img src="./assets/icons/logo.svg" alt="logo">
-        <div class="menu">
-            <a href="#home">bem-vindo</a>
-            <a href="#abilities">habilidades</a>
-            <a href="#works">trabalhos</a>
-            <a href="#services">serviços</a>
-            <a href="#contacts">contato</a>
+    <section class="profile">
+        <img src="https://avatars.githubusercontent.com/u/48558013?v=4" alt="imagem do perfil">
+        <p class="profile-name">Wendel Silva de Castro</p>
+        <p class="profile-work">Desenvolvedor Web</p>
+    </section>
+
+    <section class="links">
+        <ul>
+            <li>
+                <img src="./assets/icons/map-pin.svg" alt="icone de mapa">
+                <p>Brasil</p>
+            </li>
+            <li>
+                <img src="./assets/icons/briefcase.svg" alt="icone de maleta">
+                <p>MaquiADORO</p>
+            </li>
+            <li>
+                <a href="https://github.com/wendelsilva">
+                    <img src="./assets/icons/github.svg" alt="icone de mapa">
+                    <p>wendelsilva</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/wendel-silva-b0ba321a3/">
+                    <img src="./assets/icons/linkedin.svg" alt="icone de mapa">
+                    <p>wendel-silva</p>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:wendel245.ws@gmail.com">
+                    <img src="./assets/icons/mail.svg" alt="icone de mapa">
+                    <p>wendel245.ws@gmail.com</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="technologies">
+        <header>Tecnologias</header>
+        <div>
+            <span>html</span>
+            <span>css</span>
+            <span>javascript</span>
+            <span>reactjs</span>
+            <span>git</span>
+            <span>github</span>
+            <span>nodejs</span>
+            <span>bootstrap</span>
+            <span>sass</span>
         </div>
     </section>
-    <section id="home">
-        <div class="about-me">
-            <h1>Olá, me chamo <span>Wendel</span></h1>
-            <p>desenvolvedor web</p>
-        </div>
-        <a class="download-cv" href="./static/wendel_silva_CV.pdf" download>Download CV</a>
-        <div class="social-midias">
-            <a href="https://www.linkedin.com/in/wendel-silva-b0ba321a3/" target="_blank">
-                <img src="./assets/icons/linkedin.svg" alt="linkedin logo">
-                <p>linkedin</p>
-            </a>
-            <a href="https://github.com/wendelsilva" target="_blank">
-                <img src="./assets/icons/github.svg" alt="github logo">
-                <p>github</p>
-            </a>
-            <a href="https://www.instagram.com/eu.wendelsilva/" target="_blank">
-                <img src="./assets/icons/instagram.svg" alt="instagram logo">
-                <p>instagram</p>
-            </a>
-        </div>
+
+    <section class="experiences">
+        <header>Experiências</header>
+        <ul>
+            <li>
+                <p>MaquiADORO</p>
+                <p>2021 - Atualmente</p>
+                <p>Desenvolvedor Front-End Junior</p>
+            </li>
+            <li>
+                <p>3E Engenharia em eficiência energética</p>
+                <p>2020 - 2021</p>
+                <p>Auxiliar de Suporte em TI</p>
+            </li>
+        </ul>
     </section>
-    <section id="abilities">
-        <p>habilidades</p>
-        <div class="technologies">
-            <img src="./assets/icons/html.svg" alt="html logo">
-            <img src="./assets/icons/css.svg" alt="css logo">
-            <img src="./assets/icons/sass.svg" alt="sass logo">
-            <img src="./assets/icons/js.svg" alt="js logo">
-            <img src="./assets/icons/react.svg" alt="react logo">
-            <img src="./assets/icons/bootstrap.svg" alt="bootstrap logo">
-        </div>
+
+    <section class="education">
+        <header>Educação</header>
+        <ul>
+            <li>
+                <p>IFCE</p>
+                <p>2019 - 2020</p>
+                <p>Tecnólogo em mecatrônica industrial</p>
+            </li>
+            <li>
+                <p>Maria José Medeiros</p>
+                <p>2017 - 2019</p>
+                <p>Médio Técnico em Redes de computadores</p>
+            </li>
+        </ul>
     </section>
-    <section id="works"></section>
-    <section id="services"></section>
-    <section id="contacts"></section>
-    <section id="footer"></section>
+
+    <section class="my-projects">
+        <header>
+            <p>Meus Projetos</p>
+            <a href="https://github.com/wendelsilva?tab=repositories">Veja todos</a>
+        </header>
+    </section>
 </body>
+
+<script src="./js/script.js"></script>
+
 </html>
