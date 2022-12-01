@@ -6,54 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Wendel Silva</title>
 </head>
 
 <body>
-    <section class="profile">
-        <img src="https://avatars.githubusercontent.com/u/48558013?v=4" alt="imagem do perfil">
-        <p class="profile-name">Wendel Silva de Castro</p>
-        <p class="profile-work">Desenvolvedor Web</p>
+    <header>
+        <img src="./assets/icons/list.svg" alt="icone do botão menu">
+    </header>
+
+    <section class="presentation">
+        <div>
+            <h1>Olá, Eu sou Wendel. 👋</h1>
+            <br>
+            <p>Desenvolvedor Web apaixonado por tecnologia e graduando em engenharia da computação.</p>
+            <br>
+            <p>Atualmente estudando desenvolvimento full-stack com foco em NodeJS e ReactJS.</p>
+        </div>
+        <img src="https://via.placeholder.com/128" alt="">
     </section>
 
-    <section class="links">
+    <main class="projects">
+        <h4>Clique nos projetos e saiba mais!</h4>
         <ul>
             <li>
-                <img src="./assets/icons/map-pin.svg" alt="icone de mapa">
-                <p>Brasil</p>
-            </li>
-            <li>
-                <img src="./assets/icons/briefcase.svg" alt="icone de maleta">
-                <p>MaquiADORO</p>
-            </li>
-            <li>
-                <a href="https://github.com/wendelsilva">
-                    <img src="./assets/icons/github.svg" alt="icone de mapa">
-                    <p>wendelsilva</p>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/wendel-silva-b0ba321a3/">
-                    <img src="./assets/icons/linkedin.svg" alt="icone de mapa">
-                    <p>wendel-silva</p>
-                </a>
-            </li>
-            <li>
-                <a href="mailto:wendel245.ws@gmail.com">
-                    <img src="./assets/icons/mail.svg" alt="icone de mapa">
-                    <p>wendel245.ws@gmail.com</p>
-                </a>
+                <span class="title">Projeto #1</span>
+                <p class="description">Projeto feito em html/css para teste tecnico</p>
+                <div class="categories">
+                    <span class="category">react</span>
+                    <span class="category">react</span>
+                    <span class="category">react</span>
+                </div>
+                <div class="actions">
+                    <button>Live/Demo</button>
+                    <button>Github</button>
+                </div>
             </li>
         </ul>
-    </section>
+    </main>
 
-    <section class="technologies">
+    <section class="technologies" style="display: none;">
         <header>Tecnologias</header>
         <div>
             <span>html</span>
@@ -68,7 +64,7 @@
         </div>
     </section>
 
-    <section class="experiences">
+    <section class="experiences" style="display: none;">
         <header>Experiências</header>
         <ul>
             <li>
@@ -84,7 +80,7 @@
         </ul>
     </section>
 
-    <section class="education">
+    <section class="education" style="display: none;">
         <header>Educação</header>
         <ul>
             <li>
@@ -100,7 +96,7 @@
         </ul>
     </section>
 
-    <section class="my-projects">
+    <section class="my-projects"style="display: none;">
         <header>
             <p>Meus Projetos</p>
             <a href="https://github.com/wendelsilva?tab=repositories">Veja todos</a>
