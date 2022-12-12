@@ -16,6 +16,7 @@ body {
   flex-direction: column;
   padding: 1rem .5rem;
   background-color: var(--gray);
+  color: var(--white);
 }
 
 body, input, button, textarea {
@@ -28,12 +29,41 @@ h1, h2, h3, h4, h5, h6, strong {
   font-weight: 600;
 }
 
-a {
+ul, a {
   text-decoration: none;
-  color: #837e9f;
+  list-style: none;
+  color: var(--white);
+  cursor: pointer;
 }
 
 button {
   cursor: pointer;
 }
-/*# sourceMappingURL=global.css.map */
+
+@keyframes slide-bottom {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100%;
+  }
+}
+
+.slide-bottom {
+	-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}

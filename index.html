@@ -9,15 +9,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/global.css">
     <title>Wendel Silva</title>
 </head>
 
 <body>
     <header>
-        <img src="./assets/icons/list.svg" alt="icone do botão menu">
+        <img class="menu-button" src="./assets/icons/list.svg" alt="icone do botão menu">
     </header>
+
+    <nav class="menu closed">
+        <ul>
+            <li>
+                <a href="#projects">Projetos</a>
+            </li>
+            <li>
+                <a href="#about-me">Sobre Mim</a>
+            </li>
+            <li>
+                <a href="#contact-me">Contate-me</a>
+            </li>
+        </ul>
+    </nav>
 
     <section class="presentation">
         <div>
@@ -30,7 +44,7 @@
         <img src="https://via.placeholder.com/224" alt="">
     </section>
 
-    <main class="projects">
+    <main class="projects" id="projects">
         <h2>Confere abaixo alguns projetos que desenvolvi!</h2>
         <ul>
             <li class="project-1">
@@ -100,7 +114,7 @@
         </ul>
     </main>
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
         <div>
             <h2>Sobre mim 💠</h2>
             <br>
@@ -155,6 +169,36 @@
                 <span>PrismaORM</span>
             </li>
         </ul>
+    </section>
+
+    <section class="contact-me" id="contact-me">
+        <h2>Entre em Contato ✉️</h2>
+        <p>Você pode me contatar pelas minhas redes sociais ou enviando uma mensagem aqui para marcar um bate papo rápido.</p>
+        <div class="social-medias">
+            <ul>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/-wendelsilva/">
+                        <img src="./assets/icons/linkedin.svg" alt="icone do linkedin">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.instagram.com/eu.wendelsilva/">
+                        <img src="./assets/icons/instagram.svg" alt="icone instagram">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/wendelsilva">
+                        <img src="./assets/icons/github.svg" alt="icone do github">
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+        <form action="mailto:wendel245.ws@gmail.com">
+            <input type="text" name="name" id="name" placeholder="nome">
+            <input type="email" name="email" id="email" placeholder="email">
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 
     <section class="technologies" style="display: none;">

@@ -1,39 +1,34 @@
-function getRepos() {
-    fetch('https://api.github.com/users/wendelsilva/repos', {
-            method: 'GET',
-        })
-        .then((resp) => resp.json())
-        .then((data) => {
-            let repos = data;
-            handleGithubProjects(repos);
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
+function toggleMenu() {
+    var menuButton = document.querySelector('.menu-button');
+    var menu = document.querySelector('.menu')
+    menuButton.addEventListener('click', () => {
+        if(!menu.classList.contains('closed')) {
+            menu.classList.remove('slide-bottom');
+            menu.classList.add('slide-top');
+            menu.classList.add('closed');
+            menuButton.style.filter = 'brightness(1)';
+        } else {
+            menu.classList.remove('slide-top');
+            menu.classList.add('slide-bottom');
+            menu.classList.remove('closed');
+            menuButton.style.filter = 'brightness(10)';
+        }
+    })
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    getRepos();
-});
-
-function handleGithubProjects(repos) {
-    let projectsWrapper = document.querySelector('.my-projects');
-    repos.forEach(repository => {
-        projectsWrapper.innerHTML += `
-        <div class="project-card">
-            <div class="project-name">
-                <img src="./assets/icons/folder.svg" alt="icone de pasta de arquivo">
-                <p>${repository.name? `${repository.name}` : ''}</p>
-            </div>
-            <p class="project-description">${repository.description? `${repository.description}` : ''}</p>
-            <div class="project-info">
-                <div class="project-social">
-                    <p><img src="./assets/icons/star.svg" alt="icone de estrela">${repository.stargazers_count}</p>
-                    <p><img src="./assets/icons/git-branch.svg" alt="icone de branch do git">${repository.forks_count}</p>
-                </div>
-                <p>${repository.language? `${repository.language}` : ""}</p>
-            </div>
-        </div>
-        `;
-    });
+function closeMenuNavigate() {
+    var menuButton = document.querySelector('.menu-button');
+    var menu = document.querySelector('.menu')
+    var menuItems = menu.querySelectorAll('a')
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            menu.classList.remove('slide-bottom');
+            menu.classList.add('slide-top');
+            menu.classList.add('closed');
+            menuButton.style.filter = 'brightness(1)';
+        })
+    })
 }
+
+toggleMenu();
+closeMenuNavigate();
