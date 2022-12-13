@@ -106,6 +106,7 @@ main ul li .project-content {
   padding: 2rem;
   color: var(--white);
   text-align: center;
+  height: 100%;
 }
 
 main ul li .title {
@@ -229,4 +230,71 @@ main ul li .actions a:hover {
 .contact-me form button:hover {
   background-color: transparent;
   border: 1px solid var(--blue);
+}
+
+@media (min-width: 1280px) {
+  .presentation {
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .presentation h1 {
+    font-size: 2rem;
+  }
+
+  .presentation p {
+    font-size: 1rem
+  }
+
+  main ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  main ul li {
+    max-width: 30rem;
+  }
+
+  main h2 {
+    font-size: 1rem;
+  }
+
+  .about-me {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-me h2, .technologies h2, .contact-me h2 {
+    font-size: 1.5rem;
+  }
+
+  .technologies {
+    width: 100%;
+  }
+
+  .technologies ul {
+    gap: 2.5rem;
+  }
+
+  .technologies ul .technology img {
+    width: 2.5rem;
+  }
+
+  .contact-me {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+  }
+
+  .contact-me .wrapper {
+    max-width: 19rem;
+  }
+
+  .contact-me form {
+    width: 100%;
+  }
+
 }
