@@ -6,54 +6,205 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/global.css">
     <title>Wendel Silva</title>
 </head>
 
 <body>
-    <section class="profile">
-        <img src="https://avatars.githubusercontent.com/u/48558013?v=4" alt="imagem do perfil">
-        <p class="profile-name">Wendel Silva de Castro</p>
-        <p class="profile-work">Desenvolvedor Web</p>
-    </section>
+    <header>
+        <img class="menu-button" src="./assets/icons/list.svg" alt="icone do botão menu">
+    </header>
 
-    <section class="links">
+    <nav class="menu closed">
         <ul>
             <li>
-                <img src="./assets/icons/map-pin.svg" alt="icone de mapa">
-                <p>Brasil</p>
+                <a href="#projects">Projetos</a>
             </li>
             <li>
-                <img src="./assets/icons/briefcase.svg" alt="icone de maleta">
-                <p>MaquiADORO</p>
+                <a href="#about-me">Sobre Mim</a>
             </li>
             <li>
-                <a href="https://github.com/wendelsilva">
-                    <img src="./assets/icons/github.svg" alt="icone de mapa">
-                    <p>wendelsilva</p>
-                </a>
+                <a href="#contact-me">Contate-me</a>
             </li>
-            <li>
-                <a href="https://www.linkedin.com/in/wendel-silva-b0ba321a3/">
-                    <img src="./assets/icons/linkedin.svg" alt="icone de mapa">
-                    <p>wendel-silva</p>
-                </a>
+        </ul>
+    </nav>
+
+    <section class="presentation">
+        <div>
+            <h1>Olá, Eu sou Wendel. 👋</h1>
+            <br>
+            <p>Desenvolvedor Web apaixonado por tecnologia e graduando em Engenharia da Computação.</p>
+            <br>
+            <p>Atualmente estudando desenvolvimento full-stack com foco em NodeJS e ReactJS.</p>
+        </div>
+        <img src="./assets/icons/avatar.svg" alt="avatar do wendel">
+    </section>
+
+    <main class="projects" id="projects">
+        <h2>Confere abaixo alguns projetos que desenvolvi!</h2>
+        <ul>
+            <li class="project-1">
+                <div class="project-content">
+                    <span class="title">Design System</span>
+                    <p class="description">Design System simples do Figma ao React. Projeto desenvolvido durante 1 semana de ignite lab evento da Rocketseat.</p>
+                    <div class="categories">
+                        <span class="category">Reactjs</span>
+                        <span class="category">TailwindCSS</span>
+                        <span class="category">Storyboard</span>
+                    </div>
+                    <div class="actions">
+                        <a href="https://github.com/wendelsilva/ignite-lab-design-system" target="_blank">Github</a>
+                    </div>
+                </div>
             </li>
-            <li>
-                <a href="mailto:wendel245.ws@gmail.com">
-                    <img src="./assets/icons/mail.svg" alt="icone de mapa">
-                    <p>wendel245.ws@gmail.com</p>
-                </a>
+            <li class="project-2">
+                <div class="project-content">
+                    <span class="title">Web Calendar</span>
+                    <p class="description">Calendário Web para gerenciamento de eventos. Projeto desenvolvido durante um processo seletivo como desafio técnico.</p>
+                    <div class="categories">
+                        <span class="category">Reactjs</span>
+                        <span class="category">TailwindCSS</span>
+                        <span class="category">Nodejs</span>
+                        <span class="category">Expressjs</span>
+                        <span class="category">PrismaORM</span>
+                        <span class="category">SQLite</span>
+                    </div>
+                    <div class="actions">
+                        <a href="https://github.com/wendelsilva/tokenlab-challenge" target="_blank">Github</a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-3">
+                <div class="project-content">
+                    <span class="title">NLW eSports</span>
+                    <p class="description">Aplicação Web/Mobile para encontrar um duo no seu jogo favorito. Projeto desenvolvido durante 1 semana de NLW(Next Level Week) evento da Rocketseat.</p>
+                    <div class="categories">
+                        <span class="category">Reactjs</span>
+                        <span class="category">TailwindCSS</span>
+                        <span class="category">ReactNative</span>
+                        <span class="category">Nodejs</span>
+                        <span class="category">Expressjs</span>
+                        <span class="category">PrismaORM</span>
+                        <span class="category">SQLite</span>
+                    </div>
+                    <div class="actions">
+                        <a href="https://github.com/wendelsilva/nlw-esports" target="_blank">Github</a>
+                    </div>
+                </div>
+            </li>
+            <li class="project-4">
+                <div class="project-content">
+                    <span class="title">Todo-App</span>
+                    <p class="description">Back-end de um Aplicativo IOS para gerenciamento de tarefas. Projeto desenvolvido em conjunto com uma bolsista da Apple Developer Academy como prática de estudo.</p>
+                    <div class="categories">
+                        <span class="category">Nodejs</span>
+                        <span class="category">Expressjs</span>
+                        <span class="category">PrismaORM</span>
+                        <span class="category">PostgreSQL</span>
+                    </div>
+                    <div class="actions">
+                        <a href="https://todo-app-.up.railway.app/api-docs/" target="_blank">Live/Demo</a>
+                        <a href="https://github.com/wendelsilva/Todo-App" target="_blank">Github</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <section class="about-me" id="about-me">
+        <div>
+            <h2>Sobre mim 💠</h2>
+            <br>
+            <p>Sou desenvolvedor web a pouco mais de 1 ano apaixonado por programação, atualmente estou graduando em Engenharia de Computação pela Descomplica. Já atuei profissionalmente como front-end utilizando HTML/CSS, Javascript e React e em projetos pessoais como fullstack utilizando Nodejs, Postgresql, React e Tailwind.</p>
+            <br>
+            <p>Quando não estou programando ou estudando, gosto de jogar LoL(Legue of Legends), GarticPhone, Stop, Valorant ou qualquer outro jogo com amigos ou Assistir alguma série legal ou acompanhar conteúdos sobre finanças, empreendedorismo e tecnologia.</p>
+        </div>
+        <img src="./assets/img/profile-image.jpeg" alt="imagem de perfil do wendel">
+    </section>
+
+    <section class="technologies">
+        <h2>Tecnologias e Ferramentas 💻</h2>
+        <ul>
+            <li class="technology">
+                <img src="./assets/icons/react.svg" alt="ícone do react">
+                <span>Reactjs</span>
+            </li>
+            <li class="technology">
+                <img src="./assets/icons/javascript.svg" alt="ícone do javascript">
+                <span>JavaScript</span>
+            </li>
+            <li class="technology">
+                <img src="./assets/icons/node.svg" alt="ícone do node">
+                <span>Nodejs</span>
+            </li>
+            <li class="technology">
+                <img src="./assets/icons/tailwind.svg" alt="ícone do tailwind">
+                <span>TailwindCSS</span>
+            </li>
+            <li class="technology">
+                <img src="./assets/icons/mysql.svg" alt="ícone do mysql">
+                <span>MySQL</span>
+            </li>
+            <li class="technology">
+                <img src="./assets/icons/github.svg" alt="ícone do github">
+                <span>GitHub</span>
+            </li>
+            <li class="technology">
+                <img src="./assets/icons/html.svg" alt="ícone do html">
+                <span>HTML</span>
+            </li>
+            <li class="technology">
+                <img src="./assets/icons/css.svg" alt="ícone do css">
+                <span>CSS</span>
+            </li>
+            <li class="technology">
+                <img src="./assets/icons/postgre.svg" alt="ícone do postgresql">
+                <span>PostgreSQL</span>
+            </li>
+            <li class="technology">
+                <img src="./assets/icons/prisma.svg" alt="ícone do prismaorm">
+                <span>PrismaORM</span>
             </li>
         </ul>
     </section>
 
-    <section class="technologies">
+    <section class="contact-me" id="contact-me">
+        <div class="wrapper">
+            <h2>Entre em Contato ✉️</h2>
+            <p>Você pode me contatar pelas minhas redes sociais ou enviando uma mensagem aqui para marcar um bate papo rápido.</p>
+            <div class="social-medias">
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/-wendelsilva/">
+                            <img src="./assets/icons/linkedin.svg" alt="icone do linkedin">
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/eu.wendelsilva/">
+                            <img src="./assets/icons/instagram.svg" alt="icone instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/wendelsilva">
+                            <img src="./assets/icons/github.svg" alt="icone do github">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <form action="mailto:wendel245.ws@gmail.com">
+            <input type="text" name="name" id="name" placeholder="nome">
+            <input type="email" name="email" id="email" placeholder="email">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section class="technologies" style="display: none;">
         <header>Tecnologias</header>
         <div>
             <span>html</span>
@@ -68,7 +219,7 @@
         </div>
     </section>
 
-    <section class="experiences">
+    <section class="experiences" style="display: none;">
         <header>Experiências</header>
         <ul>
             <li>
@@ -84,7 +235,7 @@
         </ul>
     </section>
 
-    <section class="education">
+    <section class="education" style="display: none;">
         <header>Educação</header>
         <ul>
             <li>
@@ -100,7 +251,7 @@
         </ul>
     </section>
 
-    <section class="my-projects">
+    <section class="my-projects"style="display: none;">
         <header>
             <p>Meus Projetos</p>
             <a href="https://github.com/wendelsilva?tab=repositories">Veja todos</a>

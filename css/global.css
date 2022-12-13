@@ -1,63 +1,78 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-@media (max-width: 1080px) {
-  html {
-    font-size: 93.75%;
-  }
-}
-
-@media (max-width: 720px) {
-  html {
-    font-size: 87.5%;
-  }
+:root {
+  --gray: #242424;
+  --black: #000000;
+  --white: #ffffff;
+  --blue: #45BDED;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 1.8rem;
-  -webkit-font-smoothing: antialiased;
-  background-color: #22212c;
-  padding: 2rem 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem .5rem;
+  background-color: var(--gray);
+  color: var(--white);
+  margin: 0 auto;
 }
 
 body, input, button, textarea {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  color: #837e9f;
+  color: var(--white);
 }
 
 h1, h2, h3, h4, h5, h6, strong {
   font-weight: 600;
 }
 
-a {
+ul, a {
   text-decoration: none;
-  color: #837e9f;
+  list-style: none;
+  color: var(--white);
+  cursor: pointer;
 }
 
 button {
   cursor: pointer;
 }
 
-[disabled] {
-  opacity: 0.6;
-  cursor: not-allowed;
+@keyframes slide-bottom {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
 }
-/*# sourceMappingURL=global.css.map */
+
+@keyframes slide-top {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100%;
+  }
+}
+
+.slide-bottom {
+	-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@media (min-width: 1280px) {
+  body {
+    max-width: 1080px;
+  }
+}
