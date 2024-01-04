@@ -1,3 +1,7 @@
+body {
+  max-width: 22.5rem;
+}
+
 header {
   position: fixed;
   z-index: 1;
@@ -84,9 +88,75 @@ hr {
   font-size: 1rem;
 }
 
-.hero img {
+.hero img, .about-me img {
   width: 19rem;
   height: 16rem;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 3.75rem;
+  padding: 3rem 1.5rem;
+  background-color: var(--secondary-white);
+}
+
+.about-me .tech-stack {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about-me .tech-stack i {
+   font-size: 1.4rem;
+   color: var(--gray);
+}
+
+.about-me span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--black);
+  margin-bottom: .5rem;
+}
+
+.about-me h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-black);
+  margin-bottom: 1rem;
+}
+
+.about-me p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.about-me a {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  max-width: 10.5rem;
+  background-color: var(--primary-black);
+  outline: none;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: .5rem;
+  margin-top: 2rem;
+}
+
+.about-me a i {
+  font-size: 1.5rem;
+  color: var(--primary-white);
+}
+
+.about-me a p {
+  color: var(--primary-white);
 }
 
 main {
@@ -188,19 +258,7 @@ main ul li .actions a:hover {
   border: 1px solid var(--blue);
 }
 
-.about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 3.75rem;
-}
 
-.about-me img {
-  width: 12rem;
-  border-radius: .25rem;
-}
 
 .technologies ul {
   display: flex;
