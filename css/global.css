@@ -5,10 +5,15 @@
 }
 
 :root {
-  --gray: #242424;
   --black: #000000;
   --white: #ffffff;
-  --blue: #45BDED;
+
+  --primary-black: #1D1D1F;
+  --gray: #404040;
+
+  --primary-white: #F5F5F7;
+  --secondary-white: #E6E6E6;
+  --tertiary-white: #D9D9D9;
 }
 
 body {
@@ -16,16 +21,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem .5rem;
-  background-color: var(--gray);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--primary-white);
   margin: 0 auto;
 }
 
 body, input, button, textarea {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  color: var(--white);
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -35,7 +38,6 @@ h1, h2, h3, h4, h5, h6, strong {
 ul, a {
   text-decoration: none;
   list-style: none;
-  color: var(--white);
   cursor: pointer;
 }
 
@@ -43,36 +45,8 @@ button {
   cursor: pointer;
 }
 
-@keyframes slide-bottom {
-  0% {
-    top: -100%;
-  }
-  100% {
-    top: 0;
-  }
-}
-
-@keyframes slide-top {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: -100%;
-  }
-}
-
-.slide-bottom {
-	-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.slide-top {
-	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   body {
-    max-width: 1080px;
+    max-width: 1280px;
   }
 }
