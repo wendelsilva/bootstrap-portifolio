@@ -55,7 +55,7 @@ hr {
   color: var(--primary-white);
 }
 
-.presentation {
+.hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,19 +65,27 @@ hr {
   margin-top: 3rem;
 }
 
-.presentation h1, .about-me h2, .technologies h2, .contact-me h2 {
-  font-size: 1rem;
-  color: var(--blue);
+.hero h1, .hero h2 {
+  color: var(--primary-black);
   font-weight: 600;
 }
 
-.presentation p,.about-me p , .contact-me p{
-  font-size: .875rem;
+.hero h1 {
+  font-size: 2.25rem;
 }
 
-.presentation img {
-  width: 14rem;
-  border-radius: 50%;
+.hero h2 {
+  font-size: 1.5rem;
+}
+
+.hero p{
+  color: var(--gray);
+  font-size: 1rem;
+}
+
+.hero img {
+  width: 19rem;
+  height: 16rem;
 }
 
 main {
