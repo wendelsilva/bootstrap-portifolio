@@ -159,142 +159,64 @@ hr {
   color: var(--primary-white);
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
 
-main h2 {
-  font-size: .875rem;
-  font-weight: 400;
-  color: var(--blue);
-}
-
-main ul {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 3.75rem;
-}
-
-main ul li.project-1,main ul li.project-2, main ul li.project-3, main ul li.project-4  {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-main ul li.project-1 {
-  background-image: url("https://github.com/wendelsilva/ignite-lab-design-system/blob/main/ignitelab-design-system.png?raw=true");
-
-}
-
-main ul li.project-2 {
-  background-image: url("https://github.com/wendelsilva/tokenlab-challenge/blob/main/web/web-calendar/src/assets/login-screen.png?raw=true");
-}
-
-main ul li.project-3 {
-  background-image: url("https://github.com/wendelsilva/nlw-esports/blob/main/capa-nlw-esports.png?raw=true");
-}
-
-main ul li .project-content {
+.contact-me {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  background: #3a3a3a;
-  opacity: .85;
-  border-radius: .25rem;
-  padding: 2rem;
-  color: var(--white);
-  text-align: center;
-  height: 100%;
+  gap: 2rem;
+  padding: 3rem 1.5rem;
+  background-color: var(--secondary-white);
 }
 
-main ul li .title {
-  font-size: 1.25rem;
-  font-weight: 600;
+.contact-me div {
+  display: flex;
+  flex-direction: column;
 }
 
-main ul li .description {
-  font-size: .875rem;
+.contact-me div img {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact-me div span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--black);
+  margin-bottom: .5rem;
+}
+
+.contact-me div h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-black);
   margin-bottom: 1rem;
 }
 
-main ul li .categories {
+.contact-me div p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+.contact-me div .social-medias {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: row;
   gap: .5rem;
 }
 
-main ul li .categories .category {
-  background-color: var(--white);
-  padding: 0 .5rem;
-  border-radius: 1rem;
-  color: var(--gray);
-  font-size: .875rem;
+.contact-me div .social-medias a {
+  background-color: var(--primary-black);
+  padding: .75rem;
+  border-radius: .8rem;
 }
 
-main ul li .actions {
-  display: flex;
-  gap: 2rem;
-}
-
-main ul li .actions a {
-  background-color: var(--blue);
-  padding: .5rem 1rem;
-  border-radius: .25rem;
-  outline: none;
-  border: none;
-  color: var(--white);
-}
-
-main ul li .actions a:hover {
-  background-color: var(--white);
-  color: var(--blue);
-  border: 1px solid var(--blue);
-}
-
-
-
-.technologies ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
-  gap: 1.5rem;
-  margin-bottom: 6rem;
-  margin-top: 2rem;
-}
-
-.technologies ul .technology {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: .25rem;
-}
-
-.technologies ul .technology img {
-  width: 2rem;
-}
-
-.technologies ul .technology span {
-  font-size: .875rem;
-}
-.contact-me h2, .contact-me p {
-  margin-bottom: 1rem;
-}
-
-.contact-me .social-medias ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  margin-bottom: 1rem;
+.contact-me div .social-medias a i {
+  font-size: 1.5rem;
+  color: var(--secondary-white);
 }
 
 .contact-me form {
@@ -304,23 +226,37 @@ main ul li .actions a:hover {
 }
 
 .contact-me form input {
-  border: 1px solid var(--blue);
-  border-radius: .25rem;
-  padding: .5rem 1rem;
-  background-color: transparent;
+  height: 3rem;
+}
+
+.contact-me form input::placeholder, .contact-me form textarea::placeholder {
+  color: var(--tertiary-white);
+}
+
+.contact-me form input, .contact-me form textarea {
+  background-color: var(--gray);
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  color: var(--secondary-white);
+  outline: none;
+  border: none;
 }
 
 .contact-me form button {
-  padding: .5rem 1rem;
-  background-color: var(--blue);
-  border-radius: .25rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  max-width: 14rem;
+  padding: 1rem 1.5rem;
+  border-radius: .5rem;
+  background-color: var(--primary-black);
+  color: var(--secondary-white);
   border: none;
-  width: 50%;
+  outline: none;
 }
 
-.contact-me form button:hover {
-  background-color: transparent;
-  border: 1px solid var(--blue);
+.contact-me form button i {
+  font-size: 1.5rem;
 }
 
 @media (min-width: 1280px) {
