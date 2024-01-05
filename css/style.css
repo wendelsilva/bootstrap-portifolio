@@ -99,7 +99,6 @@ hr {
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  margin-bottom: 3.75rem;
   padding: 3rem 1.5rem;
   background-color: var(--secondary-white);
 }
@@ -159,6 +158,101 @@ hr {
   color: var(--primary-white);
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 3rem 1.5rem;
+}
+
+.projects div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.projects div span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--black);
+  margin-bottom: .5rem;
+}
+
+.projects div h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-black);
+}
+
+.projects ul .project-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  border-radius: .5rem;
+  padding: 1.5rem;
+  background-color: var(--primary-black);
+}
+
+.projects ul .project-wrapper img {
+  width: 17.5rem;
+  height: 10rem;
+  border-radius: .5rem .5rem 0 0;
+}
+
+.projects ul .project-wrapper .project-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.projects ul .project-wrapper .project-info p {
+  font-size: .875rem;
+  color: var(--tertiary-white);
+}
+
+.projects ul .project-wrapper .project-info i {
+  font-size: 1.5rem;
+  color: var(--tertiary-white);
+}
+
+.projects ul .project-wrapper .project-description {
+  display: flex;
+  align-items: start;
+  gap: .5rem;
+}
+
+.projects ul .project-wrapper .project-description h3 {
+  font-size: 1.25rem;
+}
+
+.projects ul .project-wrapper .actions-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  position: relative;
+  bottom: 15rem;
+  left: 15.5rem;
+  height: 0;
+}
+
+.projects ul .project-wrapper .actions-buttons a {
+  background-color: var(--black);
+  padding: .75rem;
+  border-radius: .5rem;
+}
+
+.projects ul .project-wrapper .actions-buttons a i {
+  font-size: 1.5rem;
+  color: var(--secondary-white);
+}
 
 .contact-me {
   display: flex;
@@ -264,69 +358,37 @@ hr {
   font-size: 1.5rem;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem 1rem;
+  background-color: var(--primary-black);
+}
+
+footer .copywriting {
+  font-size: .875rem;
+}
+
+footer .copywriting a {
+  text-decoration: underline;
+  color: var(--secondary-white);
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .social-links a {
+  color: var(--secondary-white);
+}
+
+footer .social-links a:hover {
+  color: var(--primary-white);
+}
+
 @media (min-width: 1280px) {
-  .presentation {
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
-  }
-
-  .presentation h1 {
-    font-size: 2rem;
-  }
-
-  .presentation p {
-    font-size: 1rem
-  }
-
-  main ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
-  main ul li {
-    max-width: 30rem;
-  }
-
-  main h2 {
-    font-size: 1rem;
-  }
-
-  .about-me {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .about-me h2, .technologies h2, .contact-me h2 {
-    font-size: 1.5rem;
-  }
-
-  .technologies {
-    width: 100%;
-  }
-
-  .technologies ul {
-    gap: 2.5rem;
-  }
-
-  .technologies ul .technology img {
-    width: 2.5rem;
-  }
-
-  .contact-me {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 8rem;
-  }
-
-  .contact-me .wrapper {
-    max-width: 19rem;
-  }
-
-  .contact-me form {
-    width: 100%;
-  }
-
+   
 }

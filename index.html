@@ -27,7 +27,7 @@
     <div class="side-menu">
         <a href="#hero" onclick="toggleSideMenu()">Inicio</a>
         <a href="#about-me" onclick="toggleSideMenu()">Sobre</a>
-        <a href="#">Projetos</a>
+        <a href="#projects" onclick="toggleSideMenu()">Projetos</a>
         <a href="#contact-me" onclick="toggleSideMenu()">Contato</a>
         <hr>
     </div>
@@ -69,71 +69,28 @@
     </section>
 
     <section class="projects" id="projects">
-        <h2>Confere abaixo alguns projetos que desenvolvi!</h2>
+        <div>
+            <span>Projetos</span>
+            <h2>Dê uma olhada nos meus projetos em destaque</h2>
+        </div>
         <ul>
-            <li class="project-1">
-                <div class="project-content">
-                    <span class="title">Design System</span>
-                    <p class="description">Design System simples do Figma ao React. Projeto desenvolvido durante 1 semana de ignite lab evento da Rocketseat.</p>
-                    <div class="categories">
-                        <span class="category">Reactjs</span>
-                        <span class="category">TailwindCSS</span>
-                        <span class="category">Storyboard</span>
-                    </div>
-                    <div class="actions">
-                        <a href="https://github.com/wendelsilva/ignite-lab-design-system" target="_blank">Github</a>
-                    </div>
+            <li class="project-wrapper">
+                <img src="https://picsum.photos/280/160" alt="imagem da tela principal de cada projeto">
+                <div class="project-info">
+                    <p>Jul - Dec 2022</p>
+                    <i class="devicon-javascript-plain"></i>
                 </div>
-            </li>
-            <li class="project-2">
-                <div class="project-content">
-                    <span class="title">Web Calendar</span>
-                    <p class="description">Calendário Web para gerenciamento de eventos. Projeto desenvolvido durante um processo seletivo como desafio técnico.</p>
-                    <div class="categories">
-                        <span class="category">Reactjs</span>
-                        <span class="category">TailwindCSS</span>
-                        <span class="category">Nodejs</span>
-                        <span class="category">Expressjs</span>
-                        <span class="category">PrismaORM</span>
-                        <span class="category">SQLite</span>
-                    </div>
-                    <div class="actions">
-                        <a href="https://github.com/wendelsilva/tokenlab-challenge" target="_blank">Github</a>
-                    </div>
+                <div class="project-description">
+                    <h3>DevLinks</h3>
+                    <p>agregador de links para redes sociais</p>
                 </div>
-            </li>
-            <li class="project-3">
-                <div class="project-content">
-                    <span class="title">NLW eSports</span>
-                    <p class="description">Aplicação Web/Mobile para encontrar um duo no seu jogo favorito. Projeto desenvolvido durante 1 semana de NLW(Next Level Week) evento da Rocketseat.</p>
-                    <div class="categories">
-                        <span class="category">Reactjs</span>
-                        <span class="category">TailwindCSS</span>
-                        <span class="category">ReactNative</span>
-                        <span class="category">Nodejs</span>
-                        <span class="category">Expressjs</span>
-                        <span class="category">PrismaORM</span>
-                        <span class="category">SQLite</span>
-                    </div>
-                    <div class="actions">
-                        <a href="https://github.com/wendelsilva/nlw-esports" target="_blank">Github</a>
-                    </div>
-                </div>
-            </li>
-            <li class="project-4">
-                <div class="project-content">
-                    <span class="title">Todo-App</span>
-                    <p class="description">Back-end de um Aplicativo IOS para gerenciamento de tarefas. Projeto desenvolvido em conjunto com uma bolsista da Apple Developer Academy como prática de estudo.</p>
-                    <div class="categories">
-                        <span class="category">Nodejs</span>
-                        <span class="category">Expressjs</span>
-                        <span class="category">PrismaORM</span>
-                        <span class="category">PostgreSQL</span>
-                    </div>
-                    <div class="actions">
-                        <a href="https://todo-app-.up.railway.app/api-docs/" target="_blank">Live/Demo</a>
-                        <a href="https://github.com/wendelsilva/Todo-App" target="_blank">Github</a>
-                    </div>
+                <div class="actions-buttons">
+                    <a href="#">
+                        <i class="devicon-github-original"></i>
+                    </a>
+                    <a href="#">
+                        <i class="ph ph-arrow-up-right"></i>
+                    </a>
                 </div>
             </li>
         </ul>
@@ -169,12 +126,17 @@
         </form>
     </section>
 
-    <section class="my-projects"style="display: none;">
-        <header>
-            <p>Meus Projetos</p>
-            <a href="https://github.com/wendelsilva?tab=repositories">Veja todos</a>
-        </header>
-    </section>
+    <footer>
+        <div class="copywriting">
+            <p>Wendel silva 2023. Layout baseado no template <a href="https://www.figma.com/community/file/1303713673750465529/portfolio-estrategico">Rocketseat’s</a>.</p>
+        </div>
+        <div class="social-links">
+            <a href="#">Github</a>
+            <a href="#">Linkedin</a>
+            <a href="#">Instagram</a>
+            <i class="ph ph-arrow-up"></i>
+        </div>
+    </footer>
 </body>
 
 <script src="./js/script.js"></script>
