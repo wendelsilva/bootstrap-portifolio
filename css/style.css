@@ -242,6 +242,11 @@ hr {
   border: none;
 }
 
+.contact-me form textarea {
+  max-width: 19.5rem;
+  min-height: 10rem;
+}
+
 .contact-me form button {
   display: flex;
   align-items: center;
