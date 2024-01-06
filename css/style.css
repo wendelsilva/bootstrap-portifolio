@@ -1,7 +1,3 @@
-body {
-  max-width: 22.5rem;
-}
-
 header {
   position: fixed;
   z-index: 1;
@@ -68,6 +64,7 @@ hr {
   gap: 1.5rem;
   padding: 0 1.5rem;
   margin: 7rem 0 3rem;
+  max-width: 22.5rem;
 }
 
 .hero h1, .hero h2 {
@@ -101,6 +98,7 @@ hr {
   gap: 2.5rem;
   padding: 3rem 1.5rem;
   background-color: var(--secondary-white);
+  max-width: 22.5rem;
 }
 
 .about-me .tech-stack {
@@ -165,6 +163,7 @@ hr {
   align-items: center;
   gap: 2.5rem;
   padding: 3rem 1.5rem;
+  max-width: 22.5rem;
 }
 
 .projects div {
@@ -261,6 +260,7 @@ hr {
   gap: 2rem;
   padding: 3rem 1.5rem;
   background-color: var(--secondary-white);
+  max-width: 22.5rem;
 }
 
 .contact-me div {
@@ -364,6 +364,7 @@ footer {
   gap: 1rem;
   padding: 1.5rem 1rem;
   background-color: var(--primary-black);
+  width: 100%;
 }
 
 footer .copywriting {
@@ -383,6 +384,10 @@ footer .social-links {
 
 footer .social-links a {
   color: var(--secondary-white);
+}
+
+footer .social-links i {
+  font-size: 1.5rem;
 }
 
 footer .social-links a:hover {
