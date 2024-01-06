@@ -18,10 +18,18 @@
 
 <body>
     <header>
-        <img class="logo" src="./assets/icons/logo.svg" alt="logo com o nome wendel em branco e um traço vermelho em cima do w">
-        <span onclick="toggleSideMenu()">
-            <img class="menu-button" src="./assets/icons/list.svg" alt="icone do botão menu">
-        </span>
+        <div>
+            <img class="logo" src="./assets/icons/logo.svg" alt="logo com o nome wendel em branco e um traço vermelho em cima do w">
+            <span onclick="toggleSideMenu()">
+                <img class="menu-button" src="./assets/icons/list.svg" alt="icone do botão menu">
+            </span>
+            <div class="navbar">
+                <a href="#hero">Inicio</a>
+                <a href="#about-me">Sobre</a>
+                <a href="#projects">Projetos</a>
+                <a href="#contact-me">Contato</a>
+            </div>
+        </div>
     </header>
 
     <div class="side-menu">
@@ -170,10 +178,10 @@
             </div>
         </div>
         
-        <form action="mailto:wendel245.ws@gmail.com">
-            <input type="text" name="name" id="name" placeholder="Nome">
+        <form action="mailto:wendel245.ws@gmail.com" method="get">
+            <input type="text" name="subject" id="name" placeholder="Nome">
             <input type="email" name="email" id="email" placeholder="E-mail">
-            <textarea name="text" id="text" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+            <textarea name="body" id="text" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
             <button type="submit">
                 <p>Entrar em contato</p>
                 <i class="ph ph-arrow-right"></i>
@@ -182,16 +190,18 @@
     </section>
 
     <footer>
-        <div class="copywriting">
-            <p>Wendel silva 2023. Layout baseado no template <a href="https://www.figma.com/community/file/1303713673750465529/portfolio-estrategico" target="_blank">Rocketseat’s</a>.</p>
-        </div>
-        <div class="social-links">
-            <a href="https://github.com/wendelsilva" target="_blank">Github</a>
-            <a href="https://www.linkedin.com/in/-wendelsilva/" target="_blank">Linkedin</a>
-            <a href="https://www.instagram.com/eu.wendelsilva/" target="_blank">Instagram</a>
-            <a href="#">
-                <i class="ph ph-arrow-up"></i> 
-            </a>
+        <div>
+            <div class="copywriting">
+                <p>Wendel silva 2023. Layout baseado no template <a href="https://www.figma.com/community/file/1303713673750465529/portfolio-estrategico" target="_blank">Rocketseat’s</a>.</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/wendelsilva" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/-wendelsilva/" target="_blank">Linkedin</a>
+                <a href="https://www.instagram.com/eu.wendelsilva/" target="_blank">Instagram</a>
+                <a href="#">
+                    <i class="ph ph-arrow-up"></i> 
+                </a>
+            </div>
         </div>
     </footer>
 </body>
