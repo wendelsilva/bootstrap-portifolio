@@ -138,7 +138,8 @@ hr {
   display: flex;
   align-items: center;
   gap: .5rem;
-  max-width: 10.5rem;
+  max-width: 12rem;
+  width: fit-content;
   background-color: var(--primary-black);
   outline: none;
   border: none;
@@ -346,12 +347,14 @@ hr {
   align-items: center;
   gap: .5rem;
   max-width: 14rem;
+  width: fit-content;
   padding: 1rem 1.5rem;
   border-radius: .5rem;
   background-color: var(--primary-black);
   color: var(--secondary-white);
   border: none;
   outline: none;
+  margin-top: 1rem;
 }
 
 .contact-me form button i {

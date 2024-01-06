@@ -16,6 +16,10 @@
   --tertiary-white: #D9D9D9;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
