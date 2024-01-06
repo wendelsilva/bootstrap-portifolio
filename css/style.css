@@ -99,6 +99,7 @@ hr {
   padding: 3rem 1.5rem;
   background-color: var(--secondary-white);
   max-width: 22.5rem;
+  border-radius: .5rem;
 }
 
 .about-me .tech-stack {
@@ -189,11 +190,32 @@ hr {
   color: var(--primary-black);
 }
 
+.projects ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.projects a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--primary-black);
+  border-radius: .5rem;
+  color: var(--secondary-white);
+  max-width: 9rem;
+  width: fit-content;
+}
+
 .projects ul .project-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  width: fit-content;
   gap: 1rem;
   border-radius: .5rem;
   padding: 1.5rem;
@@ -204,6 +226,7 @@ hr {
   width: 17.5rem;
   height: 10rem;
   border-radius: .5rem .5rem 0 0;
+  margin-top: -1.5rem;
 }
 
 .projects ul .project-wrapper .project-info {
@@ -218,7 +241,14 @@ hr {
   color: var(--tertiary-white);
 }
 
-.projects ul .project-wrapper .project-info i {
+.projects ul .project-wrapper .project-info div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.projects ul .project-wrapper .project-info div i {
   font-size: 1.5rem;
   color: var(--tertiary-white);
 }
@@ -227,6 +257,7 @@ hr {
   display: flex;
   align-items: start;
   gap: .5rem;
+  text-align: start;
 }
 
 .projects ul .project-wrapper .project-description h3 {
@@ -238,7 +269,7 @@ hr {
   flex-direction: column;
   gap: .5rem;
   position: relative;
-  bottom: 15rem;
+  top: 2.3rem;
   left: 15.5rem;
   height: 0;
 }
@@ -262,6 +293,7 @@ hr {
   padding: 3rem 1.5rem;
   background-color: var(--secondary-white);
   max-width: 22.5rem;
+  border-radius: .5rem;
 }
 
 .contact-me div {
